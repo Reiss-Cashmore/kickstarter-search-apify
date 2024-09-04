@@ -40,13 +40,17 @@ Apify.main(async () => {
         handleRequestFunction: async (context) => {
             const { url, userData: { label } } = context.request;
             log.info('Page opened.', { label, url });
-            // eslint-disable-next-line default-case
-            switch (label) {
-                case 'START':
-                    return handleStart(context, queryParameters, requestQueue, proxy, maxResults);
-                case 'PAGINATION-LIST':
-                    return handlePagination(context, requestQueue, proxy);
-            }
+            const { bodyProject } = await requestAsBrowser({
+                url:  "https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34",
+                proxyUrl: proxyConfiguration.newUrl(session.id),
+                headers: {
+                    Accept: 'application/json, text/javascript, */*; q=0.01',
+                    'X-Requested-With': 'XMLHttpRequest',
+                    Cookie: cookies,
+                },
+                responseType: 'json',
+            });
+            console.log(bodyProject)
         },
         handleFailedRequestFunction: async ({
             request,
