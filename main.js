@@ -1,11 +1,10 @@
 const Apify = require('apify');
 const querystring = require('querystring');
-
+const { utils: { log, requestAsBrowser } } = Apify;
 const { parseInput, proxyConfiguration } = require('./src/utils');
 const { BASE_URL, PROJECTS_PER_PAGE } = require('./src/consts');
 const { handleStart, handlePagination } = require('./src/routes');
 
-const { log } = Apify.utils;
 
 Apify.main(async () => {
     const requestQueue = await Apify.openRequestQueue();
