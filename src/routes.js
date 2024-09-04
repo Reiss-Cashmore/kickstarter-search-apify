@@ -65,12 +65,27 @@ exports.handlePagination = async ({ request, session }, requestQueue, proxyConfi
     // ARRAY OF THE PROJECTS FROM THE PAGE
     log.info(`Number of  saved projects: ${savedProjects}`);
     let projectsToSave;
+
     try {
         projectsToSave = body.projects.slice(0, maximumResults - savedProjects)
             .map(cleanProject);
+       
+        const { bodyProject } = await requestAsBrowser({
+            url:  projectsToSave[0].Link,
+            proxyUrl: proxyConfiguration.newUrl(session.id),
+            headers: {
+                Accept: 'application/json, text/javascript, */*; q=0.01',
+                'X-Requested-With': 'XMLHttpRequest',
+                Cookie: cookies,
+            },
+            responseType: 'json',
+        });
+        console.log(bodyProject)
     } catch (e) {
         throw new Error('The page didn\'t load as expected, Will retry...');
     }
+
+
 
     // GETTING NEW SEED (TOKEN) FROM JSON
     const { seed } = body;
