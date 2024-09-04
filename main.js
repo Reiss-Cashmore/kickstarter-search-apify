@@ -18,7 +18,7 @@ Apify.main(async () => {
     const proxy = await proxyConfiguration({ proxyConfig });
     if (!maxResults) maxResults = 200 * PROJECTS_PER_PAGE;
     const params = querystring.stringify(queryParameters);
-    const firstUrl = `${BASE_URL}${params}&google_chrome_workaround`;
+    const firstUrl = `${BASE_URL}${params}`;
     // ADDING TO THE QUEUE FIRST PAGE TO GET TOKEN
     await requestQueue.addRequest({
         url: firstUrl,
