@@ -22,22 +22,23 @@ Apify.main(async () => {
     const params = querystring.stringify(queryParameters);
     const firstUrl = `${BASE_URL}${params}`;
 
-    const crawler = new Apify.PuppeteerCrawler({
+    // Playwright Crawler Configuration
+    const crawler = new Apify.PlaywrightCrawler({
         requestList,
         maxConcurrency: 1,
         useSessionPool: true,
         launchContext: {
-            // Launch options for Puppeteer
+            // Launch options for Playwright
             launchOptions: {
-                headless: false, // Run browser in headless mode
-                args: proxy ? [`--proxy-server=${proxy.newUrl()}`] : [], // Use proxy if configured
+                headless: true, // Run browser in headless mode
+                proxy: proxy ? { server: proxy.newUrl() } : undefined, // Use proxy if configured
             },
         },
         handlePageFunction: async ({ request, page, browserController }) => {
             const { url, userData: { label } } = request;
             log.info('Page opened.', { label, url });
 
-            // Use Puppeteer's page object to interact with the website
+            // Use Playwright's page object to interact with the website
             await page.waitForSelector('body'); // Ensure page has loaded
 
             // Extracting content from the page (modify this according to your scraping needs)
