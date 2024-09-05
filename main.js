@@ -153,18 +153,11 @@ const proxyConfiguration = async ({
 Apify.Actor.main(async () => {
 
     const input = await Apify.Actor.getInput();
-    const queryParameters = await parseInput(input);
-    let { maxResults } = input;
-    const { proxyConfig } = input;
 
-    const proxy = await proxyConfiguration({ proxyConfig });
-    if (!maxResults) maxResults = 200 * PROJECTS_PER_PAGE;
-    const params = querystring.stringify(queryParameters);
-    const firstUrl = `${BASE_URL}${params}`;
+    const proxy = await Apify.Actor.createProxyConfiguration();
 
     // Playwright Crawler Configuration
     const crawler = new PlaywrightCrawler({
-        requestList,
         maxConcurrency: 1,
         useSessionPool: true,
         launchContext: {
@@ -174,10 +167,9 @@ Apify.Actor.main(async () => {
                 proxy: proxy ? { server: proxy.newUrl() } : undefined, // Use proxy if configured
             },
         },
-        handlePageFunction: async ({ parseWithCheerio, request, enqueueLinks, sendRequest }) => {
+        handlePageFunction: async ({ parseWithCheerio, request, enqueueLinks, sendRequest, log }) => {
             const { url, userData: { label } } = request;
             log.info('Page opened.', { label, url });
-
             // Use Playwright's page object to interact with the website
             const $ = await parseWithCheerio();
             // Optionally, you can log the page content for debugging
@@ -185,17 +177,16 @@ Apify.Actor.main(async () => {
 
             // Push data to the Apify dataset
             await Apify.Actor.pushData({ body: $('body') });
+            return
         },
-        handleFailedRequestFunction: async ({ request, error }) => {
+        handleFailedRequestFunction: async ({ request, error, log }) => {
             log.error(`Request ${request.url} failed repeatedly, running out of retries (Error: ${error.message})`);
         },
     });
 
     const result = await crawler.addRequests([{ url: 'https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34' }]);
 
-    log.info('Starting crawler');
     await crawler.run();
-    log.info('Crawler finished');
 });
 
 
