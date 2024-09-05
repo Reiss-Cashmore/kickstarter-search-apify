@@ -1,6 +1,13 @@
 {
-	"actorSpecification": 1,
+    "actorSpecification": 1,
 	"name": "kickstarter-search-upcoming",
-	"version": "0.1",
-	"buildTag": "latest"
+    "title": "kickstarter-search-upcoming",
+    "description": "Crawlee and Playwright project in JavaScript.",
+    "version": "0.1",
+    "buildTag": "latest",
+    "meta": {
+        "templateId": "js-crawlee-playwright-chrome"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
 }
