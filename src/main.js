@@ -15,9 +15,8 @@ import { router } from './routes.js';
 // Initialize the Apify SDK
 await Actor.init();
 
-const {
-    startUrls = ['https://www.kickstarter.com/projects/bitbotmedia/legacy-of-kain-soul-reaver-prequel-graphic-novel?ref=section-homepage-featured-project&category_id=Q2F0ZWdvcnktMjUy'],
-} = await Actor.getInput() ?? {};
+const startUrls = ['https://www.kickstarter.com/projects/bitbotmedia/legacy-of-kain-soul-reaver-prequel-graphic-novel?ref=section-homepage-featured-project&category_id=Q2F0ZWdvcnktMjUy'],
+
 
 const proxyConfiguration = await Actor.createProxyConfiguration();
 
