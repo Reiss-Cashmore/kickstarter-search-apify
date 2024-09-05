@@ -19,7 +19,6 @@ Apify.main(async () => {
 
     // Playwright Crawler Configuration
     const crawler = new Apify.PlaywrightCrawler({
-        headless: false,
         maxConcurrency: 1,
         useSessionPool: true,
         launchContext: {
