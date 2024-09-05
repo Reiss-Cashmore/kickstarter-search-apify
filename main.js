@@ -25,17 +25,17 @@ Apify.main(async () => {
     const params = querystring.stringify(queryParameters);
     const firstUrl = `${BASE_URL}${params}`;
     // ADDING TO THE QUEUE FIRST PAGE TO GET TOKEN
-    await requestQueue.addRequest({
-        url: firstUrl,
-        userData: {
-            page: 1,
-            label: 'START',
-            searchResults: [],
-            itemsToSave: [],
-            savedItems: 0,
-            maxResults,
-        },
-    });
+    // await requestQueue.addRequest({
+    //     url: firstUrl,
+    //     userData: {
+    //         page: 1,
+    //         label: 'START',
+    //         searchResults: [],
+    //         itemsToSave: [],
+    //         savedItems: 0,
+    //         maxResults,
+    //     },
+    // });
 
     // CRAWLER
     const crawler = new Apify.CheerioCrawler({
