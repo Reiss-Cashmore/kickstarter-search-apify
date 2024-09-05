@@ -29,7 +29,7 @@ Apify.main(async () => {
                 proxy: proxy ? { server: proxy.newUrl() } : undefined, // Use proxy if configured
             },
         },
-        requestHandler: async ({ parseWithCheerio, request, enqueueLinks }) => {
+        handlePageFunction: async ({ parseWithCheerio, request, enqueueLinks }) => {
             const { url, userData: { label } } = request;
             log.info('Page opened.', { label, url });
 
