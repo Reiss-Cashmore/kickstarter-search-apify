@@ -29,7 +29,7 @@ Apify.main(async () => {
         launchContext: {
             // Launch options for Puppeteer
             launchOptions: {
-                headless: true, // Run browser in headless mode
+                headless: false, // Run browser in headless mode
                 args: proxy ? [`--proxy-server=${proxy.newUrl()}`] : [], // Use proxy if configured
             },
         },
