@@ -49,10 +49,7 @@ Apify.main(async () => {
             log.error(`Request ${request.url} failed repeatedly, running out of retries (Error: ${error.message})`);
         },
     });
-    await crawler.addRequests([{
-        url: 'https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34',
-        label: 'start-url',
-    }]);
+
     log.info('Starting crawler');
     await crawler.run();
     log.info('Crawler finished');
