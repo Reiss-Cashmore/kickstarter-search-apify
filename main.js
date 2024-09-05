@@ -40,7 +40,7 @@ Apify.main(async () => {
             const { url, userData: { label } } = context.request;
             const { cookies } = await getToken("https://www.kickstarter.com/discover/advanced?term=3d%20print&sort=newest&page=1", context.session, proxy);
             log.info('Page opened.', { label, url });
-            const { body } = await requestAsBrowser({
+            const response = await requestAsBrowser({
                 url:  "https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34",
                 proxyUrl: proxy.newUrl(context.session.id),
                 headers: {
@@ -50,7 +50,7 @@ Apify.main(async () => {
                 },
                 responseType: 'json',
             });
-            console.log(body)
+            console.log(JSON.stringify(response))
         },
         handleFailedRequestFunction: async ({
             request,
