@@ -50,7 +50,7 @@ Apify.main(async () => {
                 },
                 responseType: 'json',
             });
-            console.log(JSON.stringify(response))
+            console.log(console.log(util.inspect(response)))
         },
         handleFailedRequestFunction: async ({
             request,
