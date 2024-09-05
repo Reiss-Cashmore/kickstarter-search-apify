@@ -7,6 +7,10 @@ const { handleStart, handlePagination } = require('./src/routes');
 var util = require('util')
 
 Apify.main(async () => {
+    const requestList = new Apify.RequestList({
+        sources: [{ url: 'https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34' }],
+    });
+    await requestList.initialize();
     const input = await Apify.getInput();
     const queryParameters = await parseInput(input);
     let { maxResults } = input;
@@ -19,6 +23,7 @@ Apify.main(async () => {
 
     // Playwright Crawler Configuration
     const crawler = new Apify.PlaywrightCrawler({
+        requestList,
         maxConcurrency: 1,
         useSessionPool: true,
         launchContext: {
