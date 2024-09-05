@@ -42,7 +42,7 @@ Apify.main(async () => {
             log.info('Page opened.', { label, url });
             const { bodyProject } = await requestAsBrowser({
                 url:  "https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34",
-                proxyUrl: proxyConfiguration.newUrl(context.session.id),
+                proxyUrl: proxy.newUrl(context.session.id),
                 headers: {
                     Accept: 'application/json, text/javascript, */*; q=0.01',
                     'X-Requested-With': 'XMLHttpRequest',
