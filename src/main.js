@@ -30,7 +30,7 @@ const crawler = new PlaywrightCrawler({
         const targetSelector = 'project-content';
 
         // Wait for the target selector to appear in the page
-        await page.waitForSelector(targetSelector, { timeout: 30000 }); // waits for 30 seconds for the selector to appear
+        await page.waitForSelector(targetSelector, { timeout: 3000 }); // waits for 30 seconds for the selector to appear
 
         // Get the page content
         const content = await page.content();
