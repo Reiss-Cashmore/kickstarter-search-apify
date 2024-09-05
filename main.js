@@ -62,6 +62,7 @@ Apify.main(async () => {
 
             // Log or process the JSON response
             console.log(util.inspect(body));
+            await Apify.pushData(body);
         },
         handleFailedRequestFunction: async ({ request, error }) => {
             log.error(`Request ${request.url} failed repeatedly, running out of retries (Error: ${error.message})`);
