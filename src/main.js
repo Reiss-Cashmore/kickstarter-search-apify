@@ -27,7 +27,7 @@ const crawler = new PlaywrightCrawler({
         console.log(`Processing ${request.url}...`);
 
         // Replace 'CSS_SELECTOR' with the actual CSS selector you want to target
-        const targetSelector = 'CSS_SELECTOR';
+        const targetSelector = 'project-content';
 
         // Wait for the target selector to appear in the page
         await page.waitForSelector(targetSelector, { timeout: 30000 }); // waits for 30 seconds for the selector to appear
