@@ -38,7 +38,7 @@ Apify.main(async () => {
         maxRequestRetries: 1000,
         handleRequestFunction: async (context) => {
             const { url, userData: { label } } = context.request;
-            const { cookies } = await getToken("https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34", context.session, proxy);
+            // const { cookies } = await getToken("https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34", context.session, proxy);
             log.info('Page opened.', { label, url });
             const { bodyProject } = await requestAsBrowser({
                 url:  "https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34",
@@ -46,7 +46,7 @@ Apify.main(async () => {
                 headers: {
                     Accept: 'application/json, text/javascript, */*; q=0.01',
                     'X-Requested-With': 'XMLHttpRequest',
-                    Cookie: cookies,
+                    // Cookie: cookies,
                 },
                 responseType: 'json',
             });
