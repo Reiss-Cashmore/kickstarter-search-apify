@@ -1,127 +1,7 @@
 {
-  "usableSessionsCount": 30,
+  "usableSessionsCount": 26,
   "retiredSessionsCount": 0,
   "sessions": [
-    {
-      "id": "session_mDmuvm3n6E",
-      "cookieJar": {
-        "version": "tough-cookie@4.1.4",
-        "storeType": "MemoryCookieStore",
-        "rejectPublicSuffixes": true,
-        "enableLooseMode": false,
-        "allowSpecialUseDomain": true,
-        "prefixSecurity": "silent",
-        "cookies": []
-      },
-      "userData": {},
-      "maxErrorScore": 3,
-      "errorScoreDecrement": 0.5,
-      "expiresAt": "2024-09-05T23:02:28.100Z",
-      "createdAt": "2024-09-05T22:12:28.100Z",
-      "usageCount": 0,
-      "maxUsageCount": 50,
-      "errorScore": 0
-    },
-    {
-      "id": "session_FJ8eruxFEz",
-      "cookieJar": {
-        "version": "tough-cookie@4.1.4",
-        "storeType": "MemoryCookieStore",
-        "rejectPublicSuffixes": true,
-        "enableLooseMode": false,
-        "allowSpecialUseDomain": true,
-        "prefixSecurity": "silent",
-        "cookies": []
-      },
-      "userData": {},
-      "maxErrorScore": 3,
-      "errorScoreDecrement": 0.5,
-      "expiresAt": "2024-09-05T23:02:28.103Z",
-      "createdAt": "2024-09-05T22:12:28.103Z",
-      "usageCount": 0,
-      "maxUsageCount": 50,
-      "errorScore": 0
-    },
-    {
-      "id": "session_i1AEDQ9wo6",
-      "cookieJar": {
-        "version": "tough-cookie@4.1.4",
-        "storeType": "MemoryCookieStore",
-        "rejectPublicSuffixes": true,
-        "enableLooseMode": false,
-        "allowSpecialUseDomain": true,
-        "prefixSecurity": "silent",
-        "cookies": []
-      },
-      "userData": {},
-      "maxErrorScore": 3,
-      "errorScoreDecrement": 0.5,
-      "expiresAt": "2024-09-05T23:04:34.386Z",
-      "createdAt": "2024-09-05T22:14:34.386Z",
-      "usageCount": 0,
-      "maxUsageCount": 50,
-      "errorScore": 0
-    },
-    {
-      "id": "session_k1KLmRo8KL",
-      "cookieJar": {
-        "version": "tough-cookie@4.1.4",
-        "storeType": "MemoryCookieStore",
-        "rejectPublicSuffixes": true,
-        "enableLooseMode": false,
-        "allowSpecialUseDomain": true,
-        "prefixSecurity": "silent",
-        "cookies": []
-      },
-      "userData": {},
-      "maxErrorScore": 3,
-      "errorScoreDecrement": 0.5,
-      "expiresAt": "2024-09-05T23:04:38.631Z",
-      "createdAt": "2024-09-05T22:14:38.631Z",
-      "usageCount": 0,
-      "maxUsageCount": 50,
-      "errorScore": 0
-    },
-    {
-      "id": "session_xxIs5kTifS",
-      "cookieJar": {
-        "version": "tough-cookie@4.1.4",
-        "storeType": "MemoryCookieStore",
-        "rejectPublicSuffixes": true,
-        "enableLooseMode": false,
-        "allowSpecialUseDomain": true,
-        "prefixSecurity": "silent",
-        "cookies": []
-      },
-      "userData": {},
-      "maxErrorScore": 3,
-      "errorScoreDecrement": 0.5,
-      "expiresAt": "2024-09-05T23:04:38.957Z",
-      "createdAt": "2024-09-05T22:14:38.957Z",
-      "usageCount": 0,
-      "maxUsageCount": 50,
-      "errorScore": 0
-    },
-    {
-      "id": "session_IJPo3YBq17",
-      "cookieJar": {
-        "version": "tough-cookie@4.1.4",
-        "storeType": "MemoryCookieStore",
-        "rejectPublicSuffixes": true,
-        "enableLooseMode": false,
-        "allowSpecialUseDomain": true,
-        "prefixSecurity": "silent",
-        "cookies": []
-      },
-      "userData": {},
-      "maxErrorScore": 3,
-      "errorScoreDecrement": 0.5,
-      "expiresAt": "2024-09-05T23:04:42.188Z",
-      "createdAt": "2024-09-05T22:14:42.188Z",
-      "usageCount": 0,
-      "maxUsageCount": 50,
-      "errorScore": 0
-    },
     {
       "id": "session_UNHwk6IjvP",
       "cookieJar": {
@@ -629,6 +509,147 @@
       "expiresAt": "2024-09-05T23:43:17.491Z",
       "createdAt": "2024-09-05T22:53:17.491Z",
       "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_V94jwbJLdh",
+      "cookieJar": {
+        "version": "tough-cookie@4.1.4",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-09-05T23:59:37.329Z",
+      "createdAt": "2024-09-05T23:09:37.329Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_w0M9ygbuPU",
+      "cookieJar": {
+        "version": "tough-cookie@4.1.4",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": [
+          {
+            "key": "ref_706736940",
+            "value": "direct%3F1725577777",
+            "expires": "2024-09-05T23:59:42.273Z",
+            "domain": "www.kickstarter.com",
+            "path": "/projects/bitbotmedia/legacy-of-kain-soul-reaver-prequel-graphic-novel",
+            "secure": true,
+            "hostOnly": true,
+            "creation": "2024-09-05T23:09:42.275Z",
+            "lastAccessed": "2024-09-05T23:09:42.275Z"
+          },
+          {
+            "key": "vis",
+            "value": "dd5ff9c6d8cdb0d4-ea3623ef2a8f6fbc-60dfb30ed3cd2e2ev1",
+            "expires": "2025-10-10T23:09:39.618Z",
+            "domain": "www.kickstarter.com",
+            "path": "/",
+            "secure": true,
+            "hostOnly": true,
+            "creation": "2024-09-05T23:09:42.276Z",
+            "lastAccessed": "2024-09-05T23:09:42.276Z"
+          },
+          {
+            "key": "last_page",
+            "value": "https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2Fbitbotmedia%2Flegacy-of-kain-soul-reaver-prequel-graphic-novel%3Fref%3Dsection-homepage-featured-project%26category_id%3DQ2F0ZWdvcnktMjUy",
+            "expires": "2024-09-05T23:39:38.619Z",
+            "domain": "www.kickstarter.com",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true,
+            "hostOnly": true,
+            "creation": "2024-09-05T23:09:42.277Z",
+            "lastAccessed": "2024-09-05T23:09:42.277Z"
+          },
+          {
+            "key": "__cf_bm",
+            "value": "DxtETJSZoLp.dpPnqpbwTHAhZffe4.JJaovPNqc4RqE-1725577778-1.0.1.1-iWikMcN4hhmp23unWR7KY_tKhxpokZJqdDlAMZn5ev1S86Wf12STR_avDbKTvRN1OYcXfUongrjihmyohv22IQ",
+            "expires": "2024-09-05T23:39:39.619Z",
+            "domain": "kickstarter.com",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true,
+            "hostOnly": false,
+            "creation": "2024-09-05T23:09:42.279Z",
+            "lastAccessed": "2024-09-05T23:09:42.279Z"
+          },
+          {
+            "key": "local_offset",
+            "value": "-2468",
+            "expires": "2024-09-05T23:59:42.273Z",
+            "domain": "www.kickstarter.com",
+            "path": "/",
+            "hostOnly": true,
+            "creation": "2024-09-05T23:09:42.284Z",
+            "lastAccessed": "2024-09-05T23:09:42.284Z"
+          },
+          {
+            "key": "lang",
+            "value": "en",
+            "expires": "2024-09-05T23:59:42.273Z",
+            "domain": "www.kickstarter.com",
+            "path": "/",
+            "secure": true,
+            "hostOnly": true,
+            "creation": "2024-09-05T23:09:42.286Z",
+            "lastAccessed": "2024-09-05T23:09:42.286Z"
+          },
+          {
+            "key": "request_time",
+            "value": "Thu%2C+05+Sep+2024+23%3A09%3A40+-0000",
+            "expires": "2024-09-05T23:59:42.273Z",
+            "domain": "www.kickstarter.com",
+            "path": "/",
+            "secure": true,
+            "hostOnly": true,
+            "creation": "2024-09-05T23:09:42.287Z",
+            "lastAccessed": "2024-09-05T23:09:42.287Z"
+          },
+          {
+            "key": "ksr_consent",
+            "value": "%7B%22purposes%22%3A%7B%22SaleOfInfo%22%3A%22Auto%22%7C%22Analytics%22%3Afalse%7C%22Functional%22%3Afalse%7C%22Advertising%22%3Afalse%7D%7C%22confirmed%22%3Afalse%7C%22prompted%22%3Afalse%7C%22timestamp%22%3A%222024-09-05T23%3A09%3A39.812Z%22%7C%22updated%22%3Afalse%7D",
+            "expires": "2024-09-05T23:59:42.273Z",
+            "domain": "www.kickstarter.com",
+            "path": "/",
+            "hostOnly": true,
+            "creation": "2024-09-05T23:09:42.288Z",
+            "lastAccessed": "2024-09-05T23:09:42.288Z"
+          },
+          {
+            "key": "_ksr_session",
+            "value": "38EbI%2FcwpZXKvaNCBPPwA6Vnuzzvq%2FIAtEXxoIfSAoiSOwyPvPnYAFQQpxVNWKFbCQPrA1SiV4uRbUERnb%2BOwFBVQ4dUXLVVJWFczudGaRGeuH8QyyZ5ihLeY%2BksGHEI6IiEHn6EF%2BTYRgvsM5Te%2BD3vK%2BPE5CEM%2FXX9lfRGtrFaqymf5gxTAVUKwG2bFK06YWjiipUyfU0RQx7MqtwzRiAzkFA4PCkgbrV5JtqdYgyFRBwiiWJW0A1aBnC0%2BkKD%2Bn8oWXbYanU5juS%2FksnhfHwsVNw%3D--cQvYtWtM9uMKJmoJ--T4iMg2SdxJPzvFwMurg%2Bbw%3D%3D",
+            "expires": "2024-09-05T23:59:42.273Z",
+            "domain": "www.kickstarter.com",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true,
+            "hostOnly": true,
+            "creation": "2024-09-05T23:09:42.289Z",
+            "lastAccessed": "2024-09-05T23:09:42.289Z"
+          }
+        ]
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-09-05T23:59:37.332Z",
+      "createdAt": "2024-09-05T23:09:37.332Z",
+      "usageCount": 2,
       "maxUsageCount": 50,
       "errorScore": 0
     }
