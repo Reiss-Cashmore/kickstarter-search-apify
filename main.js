@@ -4,7 +4,7 @@ const { utils: { log, requestAsBrowser } } = Apify;
 const { parseInput, proxyConfiguration, getToken } = require('./src/utils');
 const { BASE_URL, PROJECTS_PER_PAGE } = require('./src/consts');
 const { handleStart, handlePagination } = require('./src/routes');
-
+var util = require('util')
 
 Apify.main(async () => {
     const requestQueue = await Apify.openRequestQueue();
