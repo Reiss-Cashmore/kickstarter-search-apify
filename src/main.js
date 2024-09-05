@@ -16,7 +16,7 @@ import { router } from './routes.js';
 await Actor.init();
 
 const {
-    startUrls = ['https://crawlee.dev'],
+    startUrls = ['https://www.kickstarter.com/projects/bitbotmedia/legacy-of-kain-soul-reaver-prequel-graphic-novel?ref=section-homepage-featured-project&category_id=Q2F0ZWdvcnktMjUy'],
 } = await Actor.getInput() ?? {};
 
 const proxyConfiguration = await Actor.createProxyConfiguration();
