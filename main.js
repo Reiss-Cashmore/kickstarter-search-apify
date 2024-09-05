@@ -62,7 +62,7 @@ Apify.main(async () => {
 
             // Log or process the JSON response
             console.log(util.inspect(body));
-            await Apify.pushData(body);
+            await Apify.pushData({body});
             return;
         },
         handleFailedRequestFunction: async ({ request, error }) => {
