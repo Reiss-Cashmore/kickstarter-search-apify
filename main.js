@@ -6,13 +6,14 @@ const { BASE_URL, PROJECTS_PER_PAGE } = require('./src/consts');
 const { handleStart, handlePagination } = require('./src/routes');
 var util = require('util')
 
-const requestList = new Apify.RequestList({
-    sources: [{ url: 'https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34' }],
-});
-await requestList.initialize();
+
 
 Apify.main(async () => {
-    const requestQueue = await Apify.openRequestQueue();
+    const requestList = new Apify.RequestList({
+        sources: [{ url: 'https://www.kickstarter.com/projects/romain-p/modular-wizard-tower-1?ref=discovery&term=modular-wizard-tower-1&total_hits=1&category_id=34' }],
+    });
+    await requestList.initialize();
+    // const requestQueue = await Apify.openRequestQueue();
     const input = await Apify.getInput();
     // GETTING PARAMS FROM THE INPUT
     const queryParameters = await parseInput(input);
