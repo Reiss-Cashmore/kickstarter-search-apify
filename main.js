@@ -39,7 +39,7 @@ Apify.main(async () => {
 
     // CRAWLER
     const crawler = new Apify.CheerioCrawler({
-        requestQueue,
+        requestList,
         maxConcurrency: 1,
         useSessionPool: true,
         proxyConfiguration: proxy, // Use proxy in the CheerioCrawler configuration
