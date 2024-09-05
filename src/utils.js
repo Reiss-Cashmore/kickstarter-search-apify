@@ -4,8 +4,8 @@ const cheerio = require('cheerio');
 
 const { EMPTY_SELECT, LOCATION_SEARCH_ACTOR_ID, DEFAULT_SORT_ORDER, DATE_FORMAT } = require('./consts');
 const { statuses, categories, pledges, goals, raised, sorts } = require('./filters');
-
-const { utils: { log, requestAsBrowser } } = Apify;
+const log = require('@apify/log');
+const { utils: {  requestAsBrowser } } = Apify;
 
 // Function to remove unnecessary keys from the item object
 function cleanProject(project) {
