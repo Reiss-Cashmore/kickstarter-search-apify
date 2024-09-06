@@ -1,5 +1,198 @@
 {
-  "usableSessionsCount": 0,
+  "usableSessionsCount": 2,
   "retiredSessionsCount": 0,
-  "sessions": []
+  "sessions": [
+    {
+      "id": "session_6mDGqiHIK0",
+      "cookieJar": {
+        "version": "tough-cookie@4.1.4",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-09-07T00:46:26.849Z",
+      "createdAt": "2024-09-06T23:56:26.849Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_8lie0PB3A2",
+      "cookieJar": {
+        "version": "tough-cookie@4.1.4",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": [
+          {
+            "key": "_ga_1MGJDMV8DX",
+            "value": "GS1.1.1725666989.1.0.1725666989.0.0.0",
+            "expires": "2025-10-11T23:56:29.520Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.063Z",
+            "lastAccessed": "2024-09-06T23:56:32.063Z"
+          },
+          {
+            "key": "_ga",
+            "value": "GA1.1.1458332782.1725666990",
+            "expires": "2025-10-11T23:56:29.751Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.064Z",
+            "lastAccessed": "2024-09-06T23:56:32.064Z"
+          },
+          {
+            "key": "_ga_62P18XN9NS",
+            "value": "GS1.1.1725666989.1.0.1725666989.60.0.0",
+            "expires": "2025-10-11T23:56:29.750Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.066Z",
+            "lastAccessed": "2024-09-06T23:56:32.066Z"
+          },
+          {
+            "key": "_rdt_uuid",
+            "value": "1725666989790.d15f797c-c010-462a-9436-f52285630e4e",
+            "expires": "2024-12-05T23:56:29.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "secure": true,
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.066Z",
+            "lastAccessed": "2024-09-06T23:56:32.066Z"
+          },
+          {
+            "key": "_uetsid",
+            "value": "a2eb4b506cab11efa32acf92ead2448e",
+            "expires": "2024-09-07T23:56:30.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.067Z",
+            "lastAccessed": "2024-09-06T23:56:32.067Z"
+          },
+          {
+            "key": "_uetvid",
+            "value": "a2eb8ea06cab11ef841d5f0fa611e625",
+            "expires": "2025-10-01T23:56:30.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.067Z",
+            "lastAccessed": "2024-09-06T23:56:32.067Z"
+          },
+          {
+            "key": "_tt_enable_cookie",
+            "value": "1",
+            "expires": "2025-10-01T23:56:30.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.070Z",
+            "lastAccessed": "2024-09-06T23:56:32.070Z"
+          },
+          {
+            "key": "_ttp",
+            "value": "t8_ZrXGpeWe23IGhbmhzzlMeSHv",
+            "expires": "2025-10-01T23:56:30.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.071Z",
+            "lastAccessed": "2024-09-06T23:56:32.071Z"
+          },
+          {
+            "key": "_clck",
+            "value": "2i18qt%7C2%7Cfoy%7C0%7C1710",
+            "expires": "2025-09-06T23:56:30.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.075Z",
+            "lastAccessed": "2024-09-06T23:56:32.075Z"
+          },
+          {
+            "key": "_gcl_au",
+            "value": "1.1.356426689.1725666991",
+            "expires": "2024-12-05T23:56:31.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.075Z",
+            "lastAccessed": "2024-09-06T23:56:32.075Z"
+          },
+          {
+            "key": "_clsk",
+            "value": "1fdnkvx%7C1725666991731%7C1%7C1%7Cp.clarity.ms%2Fcollect",
+            "expires": "2024-09-07T23:56:31.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.076Z",
+            "lastAccessed": "2024-09-06T23:56:32.076Z"
+          },
+          {
+            "key": "__hstc",
+            "value": "7591405.4db29308836a9b18832c6838df95fa92.1725666992051.1725666992051.1725666992051.1",
+            "expires": "2025-03-05T23:56:32.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.077Z",
+            "lastAccessed": "2024-09-06T23:56:32.077Z"
+          },
+          {
+            "key": "hubspotutk",
+            "value": "4db29308836a9b18832c6838df95fa92",
+            "expires": "2025-03-05T23:56:32.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.077Z",
+            "lastAccessed": "2024-09-06T23:56:32.077Z"
+          },
+          {
+            "key": "__hssrc",
+            "value": "1",
+            "expires": "2024-09-07T00:46:32.061Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.077Z",
+            "lastAccessed": "2024-09-06T23:56:32.077Z"
+          },
+          {
+            "key": "__hssc",
+            "value": "7591405.1.1725666992052",
+            "expires": "2024-09-07T00:26:32.000Z",
+            "domain": "crawlee.dev",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-06T23:56:32.077Z",
+            "lastAccessed": "2024-09-06T23:56:32.077Z"
+          }
+        ]
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-09-07T00:46:26.852Z",
+      "createdAt": "2024-09-06T23:56:26.852Z",
+      "usageCount": 2,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    }
+  ]
 }
