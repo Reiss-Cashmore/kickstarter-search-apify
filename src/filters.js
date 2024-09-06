@@ -1,6 +1,6 @@
-// src/filters.js
+// Define various filters used in the project
 
-const categories = [
+export const categories = [
     { id: 1, slug: 'art' },
     { id: 287, slug: 'art/ceramics' },
     { id: 20, slug: 'art/conceptual art' },
@@ -172,13 +172,13 @@ const categories = [
     { id: 286, slug: 'theater/spaces' },
 ];
 
-const statuses = {
+export const statuses = {
     Live: 'live',
     Successful: 'successful',
     Upcoming: 'upcoming',
 };
 
-const pledges = [
+export const pledges = [
     '< $1,000 pledged',
     '$1,000 to $10,000 pledged',
     '$10,000 to $100,000 pledged',
@@ -186,7 +186,7 @@ const pledges = [
     '> $1,000,000 pledged',
 ];
 
-const goals = [
+export const goals = [
     '< $1,000 goal',
     '$1,000 to $10,000 goal',
     '$10,000 to $100,000 goal',
@@ -194,13 +194,13 @@ const goals = [
     '> $1,000,000 goal',
 ];
 
-const raised = [
+export const raised = [
     '< 75% raised',
     '75% to 100% raised',
     '> 100% raised',
 ];
 
-const sorts = [
+export const sorts = [
     'popularity',
     'newest',
     'end_date',
@@ -208,12 +208,3 @@ const sorts = [
     'most_backed',
     'magic',
 ];
-
-module.exports = {
-    categories,
-    statuses,
-    pledges,
-    goals,
-    raised,
-    sorts,
-};
